@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Newton Signup Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <svg class="logo-mark" width="46" height="46" viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ff6b6b" />
+            <stop offset="1" stop-color="#ffa23a" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="12" fill="url(#lg)" />
+        <path d="M19 17l-7 7 7 7" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M29 17l7 7-7 7" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.5 15l-5 18" stroke="#fff" stroke-width="3.2" stroke-linecap="round" />
+      </svg>
+      <h1>User Dashboard</h1>
+      <span class="bar"></span>
+    </header>
+
+    <div id="storageBanner" class="banner-warning" hidden>
+      ⚠️ This embedded preview blocks <b>localStorage</b>, so users will disappear on refresh.
+      Open the file directly in your browser (double-click it) or use the live preview —
+      everything will persist there.
+    </div>
+
+    <section class="card">
+      <div class="dash-head">
+        <a class="btn-back" href="index.html">← Back to Signup</a>
+        <h2>All Users</h2>
+        <span class="badge" id="userCount">0 users</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Password (SHA-256)</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"><!-- rows get built by JavaScript --></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newton Signup Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page page-narrow">
+    <header>
+      <!-- Inline SVG logo (a code-bracket mark) — no emoji, no external files needed -->
+      <svg class="logo-mark" width="46" height="46" viewBox="0 0 48 48" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#ff6b6b" />
+            <stop offset="1" stop-color="#ffa23a" />
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="12" fill="url(#lg)" />
+        <path d="M19 17l-7 7 7 7" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M29 17l7 7-7 7" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M26.5 15l-5 18" stroke="#fff" stroke-width="3.2" stroke-linecap="round" />
+      </svg>
+      <h1>Newton Signup Portal</h1>
+      <p class="tagline">Fresh signups, straight from your browser</p>
+      <span class="bar"></span>
+    </header>
+
+    <!-- Shows only when the embedded preview blocks localStorage -->
+    <div id="storageBanner" class="banner-warning" hidden>
+      ⚠️ This embedded preview blocks <b>localStorage</b>, so users will disappear on refresh.
+      Open the file directly in your browser (double-click it) or use the live preview —
+      everything will persist there.
+    </div>
+
+    <section class="card">
+      <h2>Create an account</h2>
+
+      <!-- novalidate = we do our OWN validation with JS, not the browser's default pop-ups -->
+      <form id="signupForm" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="e.g. code_ninja_07" autocomplete="off" />
+          <span class="error" id="usernameError"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="off" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="pw-wrap">
+            <input id="password" type="password" placeholder="At least 6 characters" autocomplete="new-password" />
+            <button type="button" id="togglePw" class="pw-toggle" aria-label="Show or hide password">👁</button>
+          </div>
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+
+      <!-- The bridge to page 2: a plain link styled like a button -->
+      <a class="btn-secondary" href="dashboard.html">View Dashboard →</a>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
