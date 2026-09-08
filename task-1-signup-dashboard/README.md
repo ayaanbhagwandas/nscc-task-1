@@ -15,10 +15,8 @@ Built for the **Newton Coding Club (NSCC), SRM KTR** recruitment — 1st-year ta
 
 ## 🚀 Live Demo
 
-> **➜ LIVE LINK: `PASTE-YOUR-DEPLOYED-URL-HERE`**
->
-> Deploy in 2 minutes with [Deployment (GitHub Pages)](#-deployment-github-pages),
-> then **replace this line with your URL** before submitting!
+> **➜ LIVE LINK: `https://ayaanbhagwandas.github.io/nscc-task-1/task-1-signup-dashboard/`**
+
 
 ## 📸 Screenshots
 
@@ -70,17 +68,7 @@ No installation, no build step — any modern browser (Chrome / Edge / Firefox) 
 **Environment setup:** none required. Python 3 is optional (only for the terminal
 method above). No environment variables, no secrets, no API keys.
 
-## 🌍 Deployment (GitHub Pages)
 
-1. Push this folder to your **public** GitHub repository (see structure below).
-2. Repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch: `main`,
-   Folder: `/root` → **Save**.
-3. Wait ~1 minute and refresh — GitHub shows your live URL:
-   `https://<your-username>.github.io/<repo-name>/task-1-signup-dashboard/`
-4. Paste that URL into the **Live Demo** section at the top of this README. ✅
-
-*It's a fully static site, so Netlify Drop (drag & drop the folder at
-netlify.com/drop) works as an alternative.*
 
 ## 📁 Folder structure
 
@@ -106,9 +94,3 @@ task-1-signup-dashboard/
 - Organizing one shared script across two HTML pages with **page guards**
 - CSS variables, flexbox and responsive breakpoints for the layout
 
-## 🔮 Future improvements
-
-- A **login page** that re-hashes the entered password and compares it to the stored hash
-- **Salting** + a slow hash (bcrypt/argon2) — which in a real product belongs on a server
-- A real backend database + API instead of localStorage
-- Edit-user feature and search/filter in the dashboard
