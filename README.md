@@ -4,7 +4,7 @@ My submissions for the **Newton Coding Club (SRM KTR)** recruitment — Technica
 
 | # | Task | Folder | Live Demo |
 |---|---|---|---|
-| 1 | Signup Form with Validation and Dashboard | [task-1-signup-dashboard/](./task-1-signup-dashboard/) | [Live link](https://ayaanbhagwandas.github.io/nscc-task-1/) — update after deploying |
+| 1 | Signup Form with Validation and Dashboard | [task-1-signup-dashboard/](./task-1-signup-dashboard/) | [Live link](https://ayaanbhagwandas.github.io/nscc-task-1/task-1-signup-dashboard/) — update after deploying |
 
 > Each task folder has its own README with features, run instructions, deployment
 > steps and screenshots.
